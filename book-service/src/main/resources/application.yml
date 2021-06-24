@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: book-service
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    url: @database.url@
+    username: @database.user@
+    password: @database.password@
+    hikari:
+      maximum-pool-size: 1
+  sql:
+    init:
+      platform: postgres
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: guilherme.serip02@gmail.com
+    password: 298hotelt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+mail:
+  smtp:
+    debug: true
+
+server:
+  port: 8300
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8050/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+springdoc:
+  packagesToScan: com.alten.cancun.hotel.book
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /book/swagger/api-docs
+
+availability:
+  url: http://localhost:8070/availability/

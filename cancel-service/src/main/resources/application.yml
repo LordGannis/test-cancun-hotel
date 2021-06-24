@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: cancelbook-service
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    url: @database.url@
+    username: @database.user@
+    password: @database.password@
+    hikari:
+      maximum-pool-size: 1
+  sql:
+    init:
+      platform: postgres
+
+server:
+  port: 8400
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8050/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+springdoc:
+  packagesToScan: com.alten.cancun.hotel.cancelbook
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /cancelbook/swagger/api-docs

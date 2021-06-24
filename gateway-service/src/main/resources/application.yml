@@ -1,0 +1,56 @@
+server:
+  port: 8070
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8050/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:8080"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+              - HEAD
+              - OPTIONS
+            allowedHeaders:
+              - content-type
+              - accept
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+        - id: book-service
+          uri: lb://book-service
+          predicates:
+            - Path=/book/**
+        - id: availability-service
+          uri: lb://availability-service
+          predicates:
+            - Path=/availability/**
+        - id: cancelbook-service
+          uri: lb://cancelbook-service
+          predicates:
+            - Path=/cancelbook/**
+        - id: modifybook-service
+          uri: lb://modifybook-service
+          predicates:
+            - Path=/modifybook/**
