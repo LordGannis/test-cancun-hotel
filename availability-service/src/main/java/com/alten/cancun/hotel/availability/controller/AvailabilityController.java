@@ -1,6 +1,6 @@
 package com.alten.cancun.hotel.availability.controller;
 
-import com.alten.cancun.hotel.availability.service.RoomService;
+import com.alten.cancun.hotel.availability.service.AvailabilityService;
 import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,9 +17,9 @@ public class AvailabilityController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AvailabilityController.class);
 
-    private final RoomService service;
+    private final AvailabilityService service;
 
-    public AvailabilityController(RoomService service) {
+    public AvailabilityController(AvailabilityService service) {
         this.service = service;
     }
 

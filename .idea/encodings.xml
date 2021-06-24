@@ -3,12 +3,19 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/availability-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/availability-service/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/book-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-service/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/cancel-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cancel-service/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/common-utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/gateway-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-service/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/modify-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modify-service/README.md" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/README.md" charset="windows-1252" />
   </component>
 </project>

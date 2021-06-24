@@ -1,21 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.alten.cancun.hotel</groupId>
-	<artifactId>cancun-hotel-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>cancun-hotel-parent</name>
-	<packaging>pom</packaging>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.alten.cancun.hotel</groupId>
+    <artifactId>cancun-hotel-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>cancun-hotel-parent</name>
+    <packaging>pom</packaging>
 
-	<modules>
-		<module>common-utils</module>
-		<module>eureka-server</module>
-		<module>gateway-service</module>
+    <modules>
+        <module>common-utils</module>
+        <module>eureka-server</module>
+        <module>gateway-service</module>
         <module>user-service</module>
         <module>availability-service</module>
         <module>book-service</module>
         <module>modify-service</module>
         <module>cancel-service</module>
-	</modules>
+    </modules>
 
 </project>

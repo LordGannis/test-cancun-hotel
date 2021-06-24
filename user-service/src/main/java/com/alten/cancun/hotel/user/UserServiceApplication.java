@@ -1,7 +1,6 @@
 package com.alten.cancun.hotel.user;
 
 import com.alten.cancun.hotel.advice.ExceptionHandlerAdvice;
-import com.alten.cancun.hotel.configuration.SimpleCORSFilter;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +19,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @OpenAPIDefinition(info =
 @Info(title = "User Services", version = "1.0", description = "Documentation for User Services v1.0")
 )
-@Import({ExceptionHandlerAdvice.class/*, SimpleCORSFilter.class*/})
+@Import({ExceptionHandlerAdvice.class})
 public class UserServiceApplication {
 
     public static void main(String[] args) {

@@ -1,7 +1,6 @@
 package com.alten.cancun.hotel.availability;
 
 import com.alten.cancun.hotel.advice.ExceptionHandlerAdvice;
-import com.alten.cancun.hotel.configuration.SimpleCORSFilter;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +19,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @OpenAPIDefinition(info =
 @Info(title = "Availability Service", version = "1.0", description = "Documentation for Availability Service v1.0")
 )
-@Import({ExceptionHandlerAdvice.class/*, SimpleCORSFilter.class*/})
+@Import({ExceptionHandlerAdvice.class})
 public class AvailabilityServiceApplication {
 
     public static void main(String[] args) {

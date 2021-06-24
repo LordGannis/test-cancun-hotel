@@ -17,7 +17,7 @@ public class UserService {
     public User findByLogin(String login) {
         User user = userRepository.findByLogin(login);
         if (user == null) {
-            throw new UserNotFoundException("User Not Found for login = " + login);
+            throw new UserNotFoundException("User Not Found for login=" + login);
         }
 
         return user;

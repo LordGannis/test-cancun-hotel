@@ -1,7 +1,6 @@
 package com.alten.cancun.hotel.book;
 
 import com.alten.cancun.hotel.advice.ExceptionHandlerAdvice;
-import com.alten.cancun.hotel.configuration.SimpleCORSFilter;
 import com.alten.cancun.hotel.mail.MailConfiguration;
 import com.alten.cancun.hotel.mail.MailService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;

@@ -12,12 +12,12 @@ import java.util.Date;
 import java.util.Optional;
 
 @Service
-public class RoomService {
+public class AvailabilityService {
 
     private final RoomRepository roomRepository;
 
     @Autowired
-    public RoomService(RoomRepository roomRepository) {
+    public AvailabilityService(RoomRepository roomRepository) {
         this.roomRepository = roomRepository;
     }
 

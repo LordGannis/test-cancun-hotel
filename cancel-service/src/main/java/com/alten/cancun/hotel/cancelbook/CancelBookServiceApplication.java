@@ -1,7 +1,6 @@
 package com.alten.cancun.hotel.cancelbook;
 
 import com.alten.cancun.hotel.advice.ExceptionHandlerAdvice;
-import com.alten.cancun.hotel.configuration.SimpleCORSFilter;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +19,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @OpenAPIDefinition(info =
 @Info(title = "Cancel Book Service", version = "1.0", description = "Cancel Documentation for Book Service v1.0")
 )
-@Import({ExceptionHandlerAdvice.class/*, SimpleCORSFilter.class*/})
+@Import({ExceptionHandlerAdvice.class})
 public class CancelBookServiceApplication {
 
     public static void main(String[] args) {
