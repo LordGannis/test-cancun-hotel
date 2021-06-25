@@ -63,9 +63,7 @@ public class MailService {
 
             mailSender.send(mimeMessageHelper.getMimeMessage());
 
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

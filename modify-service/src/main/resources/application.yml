@@ -15,6 +15,17 @@ spring:
   sql:
     init:
       platform: postgres
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: guilherme.serip02@gmail.com
+    password: 298hotelt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 server:
   port: 8500
