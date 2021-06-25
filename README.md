@@ -30,7 +30,7 @@ In order to look for a better service flow and avoid the downtimes, we implement
 The microservice architecture was chosen because you can have multiple services of the same project running, and, if eventually one come down, you have other services to supply the data while you fix this one. In order to everything works fine, we need a naming server and load balance for the different services instances.  
 
 This arquitecture works as you can see in the image below:
-![Image of Yaktocat](https://raw.githubusercontent.com/guilhermepigosso/test-cancun-hotel/master/docs/diagrams/services_integration.png)
+![Integration Diagram](https://raw.githubusercontent.com/guilhermepigosso/test-cancun-hotel/master/docs/diagrams/services_integration.png)
 
 Explaining the projects:
 * Eureka Server: a cloud system due with Spring Cloud and the Spring Cloud Netflix API Eureka, this is our naming server and works to determine the URLs for each service and, later, will feed the Gateway with this information;
