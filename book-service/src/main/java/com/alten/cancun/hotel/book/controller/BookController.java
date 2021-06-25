@@ -57,7 +57,7 @@ public class BookController {
         return ResponseEntity.status(HttpStatus.OK).body(book);
     }
 
-    private void sendEmailToUser(Book book, String email) {
+    void sendEmailToUser(Book book, String email) {
         Mail mail = new Mail();
         mail.setFrom("guilherme.serip02@gmail.com");
         mail.setTo(email);

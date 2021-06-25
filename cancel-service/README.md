@@ -21,7 +21,7 @@ To fulfill it's purpose of cancel a booking for the user, the service:
 * Change book in the table *tb_book* setting *active* to *false*.
 
 # 4. Service Configuration
-The service was made using Spring Boot (for easier configuration and inbound server), Spring Web (for the service expose) and Spring Data (for database manipulation). It also has direct connection with the Eureka Server as it need to be part for supply the Gateway. The service is covered by Unit Tests (JUnit and Mockito).
+The service was made using Spring Boot (for easier configuration and inbound server), Spring Web (for the service expose) and Spring Data (for database manipulation). It also has direct connection with the Eureka Server as it need to be part for supply the Gateway. The service is covered by Unit Tests (JUnit, Mockito and H2 Database).
 
 Other technologies used on it was: swagger and lombok.
 

@@ -24,7 +24,7 @@ To fulfill it's purpose, the service filters the available dates considering the
 * If there is any book in *tb_book* with the field *active* equal *true* and *room_id* equal parameter *roomId*, for the day, it should not be considered.
 
 # 4. Service Configuration
-The service was made using Spring Boot (for easier configuration and inbound server), Spring Web (for the service expose) and Spring Data (for database manipulation). It also has direct connection with the Eureka Server as it need to be part for supply the Gateway. The service is covered by Unit Tests (JUnit and Mockito).
+The service was made using Spring Boot (for easier configuration and inbound server), Spring Web (for the service expose) and Spring Data (for database manipulation). It also has direct connection with the Eureka Server as it need to be part for supply the Gateway. The service is covered by Unit Tests (JUnit, Mockito and H2 Database).
 
 Other technologies used on it was: swagger and lombok.
 

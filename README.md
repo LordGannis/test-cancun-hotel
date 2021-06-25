@@ -21,7 +21,7 @@ We expect from the system:
 * Allow user to modify his current bookings; and
 * Allow user to cancel his current bookings.
 
-*One additional rule that would be good to be added, but at this time it wasn't implemented, is to limit the reservations per user. Each reservation can have up to three days, however, the user can make N reservations currently.*
+*One additional rule that would be good to be added, but at this time it wasn't implemented, is to limit the reservations per user. Each reservation can have up to three days, however, the user can make N reservations currently, even consecutive.*
 
 # 3. Services Integration
 

@@ -1,6 +1,8 @@
 package com.alten.cancun.hotel.modifybook;
 
 import com.alten.cancun.hotel.advice.ExceptionHandlerAdvice;
+import com.alten.cancun.hotel.mail.MailConfiguration;
+import com.alten.cancun.hotel.mail.MailService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +22,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @OpenAPIDefinition(info =
 @Info(title = "Modify Book Service", version = "1.0", description = "Documentation for Modify Book Service v1.0")
 )
-@Import({ExceptionHandlerAdvice.class})
+@Import({ExceptionHandlerAdvice.class, MailConfiguration.class, MailService.class})
 public class ModifyBookServiceApplication {
 
     public static void main(String[] args) {
